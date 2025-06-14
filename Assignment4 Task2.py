@@ -8,3 +8,6 @@ print('Data successfully appended')
 file1 = open('output.txt', "a")
 appending_file = file1.write(user_append)
 file1.close()
+print("\nFinal content of output.txt:")
+with open("output.txt", "r") as file:
+  print(file.read())
